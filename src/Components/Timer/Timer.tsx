@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import {TimerState} from '../../Timer_Types/Timer_Types'
-
+import {TimerButton} from '../TimerButton/TimerButton'
 
 
 export const Timer = () => {
@@ -59,9 +59,9 @@ function Reset(){
             <span>{timer.hour < 10 ? `0${timer.hour}` : timer.hour}</span>
             <span>{timer.minutes < 10 ? `0${timer.minutes}` : timer.minutes}</span>
             <span>{timer.seconds < 10 ? `0${timer.seconds}` : timer.seconds}</span>
-            <button onClick={Run}>Start</button>
             <button onClick={Stop}>Stop</button>
-            <button onClick={Reset}>Reset</button>
+            <button onClick={Reset}>Reset</button>  
+            <TimerButton ButtonAction={Run} ButtonValue={"Start"}/>
         </div>
     )
 }

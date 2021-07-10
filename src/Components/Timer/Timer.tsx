@@ -59,9 +59,10 @@ function Reset(){
             <span>{timer.hour < 10 ? `0${timer.hour}` : timer.hour}</span>
             <span>{timer.minutes < 10 ? `0${timer.minutes}` : timer.minutes}</span>
             <span>{timer.seconds < 10 ? `0${timer.seconds}` : timer.seconds}</span>
-            <button onClick={Stop}>Stop</button>
             <button onClick={Reset}>Reset</button>  
+
             <TimerButton ButtonAction={Run} ButtonValue={"Start"}/>
+            <TimerButton ButtonAction={Stop} ButtonValue={"Stop"}/>
         </div>
     )
 }

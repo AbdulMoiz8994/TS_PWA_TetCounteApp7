@@ -8,3 +8,7 @@ export interface TimerNumberType{
     timer: TimerState   
 }
 
+export type TimerButtonProp={
+    ButtonAction: () =>void,
+    ButtonValue: string
+}

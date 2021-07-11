@@ -11,7 +11,6 @@ export const Timer = () => {
    const [inter, setInterv]=useState<any>()
 
 function Run(){
-    // start()
     if(status === 0){   
   setInterv(
       setInterval(() =>{

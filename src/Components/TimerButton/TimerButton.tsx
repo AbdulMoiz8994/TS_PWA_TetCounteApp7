@@ -1,9 +1,5 @@
 import React from 'react'
-
-export type TimerButtonProp={
-    ButtonAction: () =>void,
-    ButtonValue: string
-}
+import {TimerButtonProp} from '../../Timer_Types/Timer_Types'
 
 
 export const TimerButton:React.FC<TimerButtonProp> = ({ButtonAction,ButtonValue}) => {

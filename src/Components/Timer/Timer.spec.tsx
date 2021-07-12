@@ -20,6 +20,12 @@ describe('Timer Comp',() =>{
    test('Checking the Timer Number',() =>{
      expect(container.containsMatchingElement(<TimerNumber timer={container.props().timer}/>))
    })
-
+ 
+   test('Checking The Timer Number Element',() =>{
+     expect(container.find('TimerNumber').length).toBeGreaterThanOrEqual(1)
+   })
+   it('chekcing the Timer Button',() =>{
+     expect(container.find('TimerButton').length).toBe(3)
+   })
 })
 

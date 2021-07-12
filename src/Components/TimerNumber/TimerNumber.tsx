@@ -2,12 +2,12 @@ import React from 'react'
 import {TimerNumberType} from '../../Timer_Types/Timer_Types'
 
 
-export const TimerNumber: React.FC<TimerNumberType> = ({timer}) => {
+export const TimerNumber: React.FC<TimerNumberType> = ({timer:{hour,minutes,seconds}}) => {
     return (
         <div>
-            <span>{timer.hour < 10 ? `0${timer.hour}` : timer.hour}</span>
-            <span>{timer.minutes < 10 ? `0${timer.minutes}` : timer.minutes}</span>
-            <span>{timer.seconds < 10 ? `0${timer.seconds}` : timer.seconds}</span>
+            <span>{hour < 10 ? `0${hour}` : hour}</span>
+            <span>{minutes < 10 ? `0${minutes}` : minutes}</span>
+            <span>{seconds < 10 ? `0${seconds}` : seconds}</span>
 
         </div>
     )

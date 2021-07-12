@@ -1,0 +1,36 @@
+
+  
+  @media screen and (max-width: 1024px) {
+    :root {
+     
+  
+      --button-text-size: 4em;
+    }
+  }
+
+
+
+  .button-container {
+    flex: 1 1 auto;
+    text-align: center;
+    margin: 20px 20px;
+    border: var(--button-border);
+    min-height: 50px;
+    background-color: blue;
+    color: white;
+    border: none !important;
+    font-family: 'Comfortaa', cursive;
+    
+  }
+  button{
+    background-color: transparent !important;
+     padding: 10px !important;
+    border: none !important;
+    font-size: 2.3rem !important;
+    color: white;
+    outline: none !important; 
+    
+  }
+  .button-container:hover,button:hover {
+    cursor: pointer;
+  }

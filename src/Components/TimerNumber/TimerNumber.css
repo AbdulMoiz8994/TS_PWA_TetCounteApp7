@@ -1,0 +1,8 @@
+.time-display {
+    height: 30%;
+    font-size: 5em;
+    text-align: center !important;   
+    color: blue;
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 70px;
+  }

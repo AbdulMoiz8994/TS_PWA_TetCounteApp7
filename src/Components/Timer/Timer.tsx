@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import {TimerState} from '../../Timer_Types/Timer_Types'
 import {TimerButton} from '../TimerButton/TimerButton'
 import {TimerNumber} from '../TimerNumber/TimerNumber'
+import './Timer.css'
 
 
 export const Timer = () => {
@@ -55,11 +56,16 @@ function Reset(){
 }
 
     return (
-        <div>
+        <div className="timer-container">
+            <h1>Timer Application</h1>
+            {/* <div className="time-display "> */}
             <TimerNumber timer={timer}/>
+            {/* </div> */}
+            <div className="timer-button-container">
             <TimerButton ButtonAction={Run} ButtonValue={"Start"}/>
             <TimerButton ButtonAction={Stop} ButtonValue={"Stop"}/>
             <TimerButton ButtonAction={Reset} ButtonValue={"Reset"}/>
+            </div>
         </div>
     )
 }

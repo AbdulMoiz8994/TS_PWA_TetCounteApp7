@@ -11,10 +11,6 @@ it('should render a <div />', () => {
 		expect(container.find('div').length).toEqual(1);
 });
 
-it('should be a heading',() =>{
-	const heading=shallow(<App/>);
-	expect(heading.find('h1').length).toEqual(1)
-})
 
 it('checking the Timer Comp on App Comp',() =>{
 	const Comp=shallow(<App/>);

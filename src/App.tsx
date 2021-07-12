@@ -7,8 +7,7 @@ import {Timer} from './Components/index'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Timer Application</h1>
+    <div className="app-container">
       <Timer/>
     </div>
   );

@@ -3,20 +3,23 @@ import {shallow} from 'enzyme'
 import {Timer} from './Timer'
 import {TimerNumber} from '../TimerNumber/TimerNumber'
 import {TimerButton} from '../TimerButton/TimerButton'
-// import {TimerNumberType} from '../../Timer_Types/Timer_Types'
 
 describe('Timer Comp',() =>{
   let container=shallow(<Timer/>)   
 
     it('Chekcing Div',() =>{
-      expect(container.find('div')).toHaveLength(1)
+      expect(container.find('div').length).toBeGreaterThanOrEqual(2)
     });
    
    test('checking Timer Number Comp ',() =>{
      expect(container.containsMatchingElement(<TimerButton ButtonAction={jest.fn} ButtonValue={""}/>))
    })  
   
-
+   it('should be a heading',() =>{
+    const heading=shallow(<Timer/>);
+    expect(heading.find('h1').length).toEqual(1)
+  })
+  
    test('Checking the Timer Number',() =>{
      expect(container.containsMatchingElement(<TimerNumber timer={container.props().timer}/>))
    })
